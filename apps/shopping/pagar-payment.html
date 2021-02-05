@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: "lato", sans-serif;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+
+.responsive-table li {
+  border-radius: 3px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.responsive-table .table-header {
+  background-color: #95a5a6;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.responsive-table .table-row {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.responsive-table .col-1 {
+  flex-basis: 10%;
+}
+.responsive-table .col-2 {
+  flex-basis: 40%;
+}
+.responsive-table .col-3 {
+  flex-basis: 25%;
+}
+.responsive-table .col-4 {
+  flex-basis: 25%;
+}
+
+    </style>
+       <meta charset="utf-8">
+       <meta http-equiv="x-ua-compatible" content="ie=edge">
+       <title>Pagar Estacionamento</title>
+       <meta name="description" content="WebApp de exemplo">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="css/main.css">
+       
+       <link rel="manifest" href="manifest.json">
+   
+       <!-- Add to homescreen for Chrome on Android -->
+       <meta name="mobile-web-app-capable" content="yes">
+       <link rel="icon" sizes="192x192" href="img/icon.png">
+       <meta name="theme-color" content="#F77F00">
+   
+       <!-- Add to homescreen for Safari on iOS -->
+       <meta name="apple-mobile-web-app-capable" content="yes">
+       <meta name="apple-mobile-web-app-title" content="Shopping">
+       <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+       <link rel="apple-touch-icon-precomposed" href="img/icon.png">
+   
+       <!-- Tile icon for Win8 (144x144 + tile color) -->
+       <meta name="msapplication-TileImage" content="img/icon.png">
+       <meta name="msapplication-TileColor" content="#F77F00">
+</head>
+<body>
+    <main class="pagar">
+        <div class="topo-fixo z-depth-1">
+            <div class="valign-wrapper amber darken-2 white-text">
+                <div>
+                    <a href="index.html"><i class="material-icons waves-effect waves-light waves-circle">arrow_back</i></a>
+                </div>
+        
+                <h5 class="titulo">Pay Parking</h5>
+        
+                <div>
+                    <i class="material-icons waves-effect waves-light
+                              waves-circle dropdown-button"
+                        data-activates="submenu-pagar" data-gutter="5"
+                        data-constrainwidth="false">
+                            more_vert
+                    </i>
+        
+                    <ul id="submenu-pagar" class="dropdown-content">
+                        <li><a class="black-text" href="lojas.html">Store</a></li>
+                        <li><a class="black-text" href="index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="container">
+        <ul class="responsive-table">
+          <li class="table-header">
+            <div class="col col-2">Id</div>
+            <div class="col col-2">Name</div>
+            <div class="col col-3">Amount</div>
+            <div class="col col-3">Status</div>
+          </li>
+          <li class="table-row">
+            <div class="col col-2" data-label="Id">42235</div>
+            <div class="col col-2" data-label="Name">John Doe</div>
+            <div class="col col-3" data-label="Amount">$350</div>
+            <div class="col col-3" data-label="Payment Status">Pending</div>
+          </li>
+          
+        </ul>
+      </div>
+    </main>
+</body>
+</html>
