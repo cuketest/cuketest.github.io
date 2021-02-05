@@ -1,7 +1,8 @@
 $('body').on('submit', 'form', function(){
-  Materialize.toast('Só testes, não enviei o cartão, claro', 4000);
+  Materialize.toast('only test, i didn`t send the card', 4000);
   $('form')[0].reset();
 
+  window.open('/pagar-payment.html')
   var now = new Date();
   var saida = new Date(now.getTime() + 1000 * 60 * 15);
 
