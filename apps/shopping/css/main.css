@@ -15,3 +15,46 @@
  * Default mobile-first, responsive styling for pickadate.js
  * Demo: http://amsul.github.io/pickadate.js
  */html{background-color:#e86c13;height:100%}body{background-color:#f2f2f2;min-height:100%;min-width:320px;max-width:600px;margin:0 auto;position:relative;font-family:Roboto,-apple-system-font,Segoe UI,Helvetica Neue,Helvetica,Arial,sans-serif}.titulo{font-size:1.3rem;width:100%;text-align:center}.tabs .indicator{background-color:#fff}.collection{font-size:18px}.topo-fixo{position:fixed;top:0;width:100%;z-index:2}@media (min-width:600px){.topo-fixo{position:absolute}}.topo-fixo a{color:inherit}.unloading{background-color:#f2f2f2;position:fixed;z-index:7;top:0;width:100vw;height:100vh;overflow:hidden;-webkit-transform:translate3d(-300%,0,0);transform:translate3d(-300%,0,0);-webkit-transition:-webkit-transform 1.5s ease-out;transition:-webkit-transform 1.5s ease-out;transition:transform 1.5s ease-out;transition:transform 1.5s ease-out,-webkit-transform 1.5s ease-out;opacity:0;-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-transition:opacity .6s,-webkit-transform .5s ease-out;transition:opacity .6s,-webkit-transform .5s ease-out;transition:transform .5s ease-out,opacity .6s;transition:transform .5s ease-out,opacity .6s,-webkit-transform .5s ease-out}.lojas{padding-top:125px}.pagar{padding-top:75px}img{max-width:100%}.parallax-container{height:240px;z-index:1}.parallax-container a{color:#fff;display:block;position:absolute;z-index:3}.home{background-color:#f57f16;background:url(../img/entrada.jpg) center top;background-size:cover;height:100vh;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.home h1{background:#ffb300;color:#fff;margin-top:auto;margin-bottom:1.25em;font-size:2em;text-align:center;padding:10px 0;text-transform:uppercase}.home .collection{margin-bottom:1.6em}.home .collection .collection-item{color:#444}.home .collection .material-icons{margin:.2em;vertical-align:middle}.pagar{padding-bottom:40px}.pagar .btn{width:100%}.pagar .code-scan{margin-top:1em}.pagar .code-scan i{font-size:30px}.pagar .modal{height:80%;max-height:80%}.pagar .modal .btn{display:inline-block;font-size:90%;width:auto;padding:0 10px;margin:4px}.pagar #interactive{-webkit-transform:scale(.4);-ms-transform:scale(.4);transform:scale(.4);-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;position:absolute}
+ body {
+    font-family: "lato", sans-serif;
+  }
+
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .responsive-table li {
+    border-radius: 3px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .responsive-table .table-header {
+    background-color: #95a5a6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .responsive-table .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  }
+  .responsive-table .col-1 {
+    flex-basis: 10%;
+  }
+  .responsive-table .col-2 {
+    flex-basis: 15%;
+  }
+  .responsive-table .col-3 {
+    flex-basis: 25%;
+  }
+  .responsive-table .col-4 {
+    flex-basis: 25%;
+  }
+
+  .responsive-table .col-6 {
+    flex-basis: 50%;
+  }
