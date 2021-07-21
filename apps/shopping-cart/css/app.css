@@ -37,9 +37,8 @@ section#flux-cart {
     background: white;
 }
 
-.flux-product img {
-    width: 50%;
-
+.inline-image {
+    width: 270px;
     border: 2px solid #ddd;
 }
 
@@ -201,6 +200,23 @@ button.view-cart:active {
     border-top: 5px solid white;
     box-shadow: none;
 }
+.image-container {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+.flow-image {
+    position: relative;
+    left: -270px;
+    width: 270px;
+    border: 2px solid #ddd;
+}
+.slide-bck-right {
+	-webkit-animation: slide-bck-right 0.45s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: slide-bck-right 0.45s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
 
 @media (max-width: 1280px) {
     button.view-cart {
@@ -256,5 +272,26 @@ button.view-cart:active {
 
     .active .mini-cart {
         right: 0;
+    }
+}
+
+@keyframes slide-bck-right {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+    }
+    100% {
+      -webkit-transform: translateZ(-400px) translateX(800px) scale(0);
+              transform: translateZ(-400px) translateX(800px) scale(0);
+    }
+}
+@-webkit-keyframes slide-bck-right {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+    }
+    100% {
+      -webkit-transform: translateZ(-400px) translateX(800px) scale(0);
+              transform: translateZ(-400px) translateX(800px) scale(0);
     }
 }
